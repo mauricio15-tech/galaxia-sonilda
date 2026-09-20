@@ -64,7 +64,7 @@ scene.addEventListener("pointerdown",e=>{if(e.target.closest("button"))return;bu
 addEventListener("resize",resize,{passive:true});addEventListener("orientationchange",()=>setTimeout(resize,250),{passive:true});
 resize();
 })();
-\nconst bgMusic = document.getElementById('bgMusic');
+\const bgMusic = document.getElementById('bgMusic');
 if (bgMusic) {
   bgMusic.volume = 0.55;
   const startMusic = () => bgMusic.play().catch(() => {});
