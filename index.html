@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#02020a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Galaxia de Flores Amarillas 🌻</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main id="app">
+  <section id="intro" class="intro">
+    <div class="intro-stars"></div>
+    <div class="intro-flower">🌻</div>
+    <div class="intro-title">Para Sonilda<br><span>Con cariño, de El Gato Con Botas</span></div>
+    <p class="hint">Toca para descubrir tu sorpresa</p>
+    <button id="start" class="primary">✨ ENTRAR ✨</button>
+    <small>Toca la pantalla después para crear más flores</small>
+  </section>
+
+  <section id="scene" class="scene" aria-hidden="true">
+    <canvas id="stars"></canvas>
+    <div class="nebula n1"></div><div class="nebula n2"></div>
+    <div class="orbit o1"></div><div class="orbit o2"></div><div class="orbit o3"></div>
+
+    <div class="black-hole">
+      <div class="ring ring3"></div><div class="ring ring2"></div><div class="ring ring1"></div>
+      <div class="event-horizon"></div>
+      <div class="glow"></div>
+    </div>
+
+    <div id="flowers"></div>
+    <div id="bursts"></div>
+
+    <div id="quote" class="quote">
+      <div class="card">
+        <div class="card-flower">🌻</div>
+        <div class="eyebrow">PARA SONILDA</div>
+        <h1>Entre millones de estrellas,<br>siempre hay una que brilla de una forma especial.</h1>
+        <p>Sonilda, tú haces que este pequeño universo tenga un brillo diferente.</p>
+        <div class="signature">Con cariño, El Gato Con Botas ✨</div>
+        <button id="replay" class="secondary">↻ Ver otra vez</button>
+      </div>
+    </div>
+
+    <div class="tip">Toca en cualquier lugar ✨</div>
+  </section>
+</main>
+<script src="script.js"></script>
+<audio id="bgMusic" src="musica.mp3" preload="auto" loop></audio>
+</body>
+</html>
